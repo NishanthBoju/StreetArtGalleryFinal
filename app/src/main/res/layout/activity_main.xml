@@ -182,7 +182,7 @@ android:text="View Artists Arts"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="0dp"
             android:hint="Enter User id" />
 
         <Button
@@ -190,7 +190,29 @@ android:text="View Artists Arts"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Find User"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="0dp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/editText101"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="0dp"
+            android:hint="Enter User id" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find Art Details"
+            android:layout_marginTop="0dp"
 
             />
     </LinearLayout>

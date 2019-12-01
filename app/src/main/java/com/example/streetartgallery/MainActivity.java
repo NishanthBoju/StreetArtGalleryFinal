@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         Button btn7 = findViewById(R.id.button7);
         Button btn8 = findViewById(R.id.button8);
         Button btn9 = findViewById(R.id.button9);
+        Button btn10 = findViewById(R.id.button10);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,6 +92,19 @@ public class MainActivity extends AppCompatActivity {
                 EditText in1=(EditText) findViewById(R.id.editText91);
 
                 Intent myIntent = new Intent(MainActivity.this,Main9Activity.class);
+                myIntent.putExtra("ID",Integer.parseInt(in1.getText().toString()));
+
+                startActivity(myIntent);
+
+            }
+        });
+
+        btn10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                EditText in1=(EditText) findViewById(R.id.editText101);
+
+                Intent myIntent = new Intent(MainActivity.this,Main10Activity.class);
                 myIntent.putExtra("ID",Integer.parseInt(in1.getText().toString()));
 
                 startActivity(myIntent);
